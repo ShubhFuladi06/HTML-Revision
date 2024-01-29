@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #414141;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px" alt="no image">
+  <img src="./jjapan.jpg" width="400px" alt="no image">
+
+  <picture>
+    <source media="(min-width: 600px)" srcset="./jjapan.jpg" />
+    <source media="(min-width: 400px)" srcset="./jjapan.jpg" />
+    <img src="./jjapan.jpg" alt="no image">
+  </picture>
+
+  <!-- an image map generator -->
+  <img src="japan.jpg"  usemap="#image-map">
+  <map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="3067,1371,673" shape="circle">
+    <area onclick="two()" target="" alt="" title="" href="" coords="3680,3324,2369,2191" shape="rect">
+  </map>
+
+  <script>
+    function one(){
+      alert("you clicked on one")
+    }
+    function two(){
+      alert("you clicked on two")
+    }
+  </script>
+
+
+</body>
+</html>
